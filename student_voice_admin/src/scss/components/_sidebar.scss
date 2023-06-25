@@ -1,0 +1,51 @@
+.sidebar-container{
+    display:flex;
+    z-index: 5;
+
+    &-bar{
+        background: $blue;
+        color: $white;
+        height: 100vh;
+        width: 200px;
+        transition: all 0.5s;
+
+        &-top{
+            display: flex;
+            align-items:center;
+            padding:20px 15px;
+
+            &-logo{
+                font-size: 30px;
+            }
+
+            &-bar-icon{
+                display: flex;
+                font-size: 25px;
+                margin-left: 50px;
+            }
+        }
+
+        &-link{
+            display: flex;
+            color: #fff;
+            padding: 10px 15px;
+            gap: 15px;
+            transition: all 0.5s;
+
+            &:hover{
+                background: $backgroud;
+                color: $blue;
+                transition: all 0.5s;
+            }
+
+            &-icon, &-text{
+                font-size: 20px;
+            }
+        }
+
+        &-active{
+            background: $backgroud;
+            color: $blue;
+        }
+    }
+}
